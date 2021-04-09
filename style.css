@@ -1,0 +1,47 @@
+body {
+	margin: 0;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#map {
+	height: calc(100vh * 0.85);
+	width: 100%;
+	border-radius: 25px;
+	margin: 2rem 0;
+}
+
+#addMarker {
+	border: 1px solid black;
+	width: 50%;
+}
+
+.evacations-cont {
+	width: 100%;
+}
+
+.evacs-cards {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.evac-card {
+	width: 25%;
+	min-width: 15rem;
+	border: 1px solid #9b5de5;
+	border-radius: 10px;
+	padding: 1rem;
+	margin: 1rem;
+}
+
+.evac-card hr {
+	color: #9b5de5;
+}
