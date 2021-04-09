@@ -1,5 +1,6 @@
 .logo {
-	width: 150px;
+	position: absolute;
+	width: 130px;
 }
 
 .nav-wrapper {
@@ -13,4 +14,6 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	padding-bottom: 3em;
 }
