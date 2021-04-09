@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 nav {
-	background-color: #00000000;
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .nav-link-seperator {
