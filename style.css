@@ -1,10 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 body {
 	margin: 0;
-	padding-left: 2.5%;
-	padding-right: 2.5%;
+	padding: 0;
+}
+
+/* Navbar */
+.logo {
+	width: 150px;
+}
+
+.nav-wrapper {
+	width: 100%;
+	position: absolute;
+	top: 0%;
+	z-index: 1;
+}
+/* Navbar */
+
+header {
+	z-index: 0;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hero {
+	display: flex;
+	align-items: flex-end;
+	margin-top: 12rem;
+}
+
+.hero h1 {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 96px;
+	line-height: 144px;
+	letter-spacing: 0.165em;
+	display: inline-block;
+	margin: 0;
+}
+
+.hero img {
+	width: 12rem;
+	margin-bottom: 2rem;
+}
+
+#downGuide {
+	margin-bottom: 50%;
 }
 
 section {
+	padding: 2rem 4rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -12,19 +61,32 @@ section {
 }
 
 #map {
-	height: calc(100vh * 0.85);
+	height: calc(100vh * 0.7);
 	width: 100%;
-	border-radius: 25px;
-	margin: 2rem 0;
+	margin-bottom: 1.5rem;
 }
 
 #addMarker {
-	border: 1px solid black;
 	width: 50%;
+	font-family: Poppins;
+	font-size: 24px;
+	line-height: 36px;
+	letter-spacing: 0.1em;
+	margin-top: 1rem;
+	margin-bottom: 3rem;
 }
 
 .evacations-cont {
 	width: 100%;
+}
+
+.evacations-cont h2 {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 54px;
+	letter-spacing: 0.1em;
 }
 
 .evacs-cards {
@@ -37,11 +99,33 @@ section {
 	width: 25%;
 	min-width: 15rem;
 	border: 1px solid #9b5de5;
-	border-radius: 10px;
 	padding: 1rem;
 	margin: 1rem;
 }
 
+.evac-card h3 {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 36px;
+	letter-spacing: 0.1em;
+}
+
 .evac-card hr {
 	color: #9b5de5;
+}
+
+.evac-card p {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: 0.1em;
+}
+
+.shad-and-rad {
+	box-shadow: 5px 5px 2px 2px rgba(82, 82, 82, 0.2);
+	border-radius: 20px;
 }

@@ -39,7 +39,7 @@ let evacs = {
 
 function createEvacCard(evacName, cap, loc) {
 	const card = document.createElement('div');
-	const name = document.createElement('h5');
+	const name = document.createElement('h3');
 	const bar = document.createElement('hr');
 	const capacity = document.createElement('p');
 
@@ -49,12 +49,14 @@ function createEvacCard(evacName, cap, loc) {
 	card.appendChild(bar);
 	card.append(capacity);
 	card.classList.add('evac-card');
+	card.classList.add('shad-and-rad');
 
 	card.addEventListener('click', () => {
 		setFocus(loc);
 	});
 
 	document.querySelector('.evacs-cards').appendChild(card);
+	userLocation.setCoordinate();
 }
 
 function initMap() {
@@ -64,7 +66,6 @@ function initMap() {
 	});
 
 	for (evac in evacs) {
-		console.log(evacs[evac].loc);
 		setMarkerEvac(evacs[evac].loc);
 		createEvacCard(evacs[evac].name, evacs[evac].cap, evacs[evac].loc);
 	}
@@ -150,3 +151,10 @@ const userLocation = {
 		}
 	},
 };
+
+let addMarker = document.querySelector('#addMarker');
+addMarker.addEventListener('click', () => {
+	userLocation.setCoordinate();
+	setMarker(userLocation.coordinates);
+	setFocus(userLocation.coordinates);
+});
