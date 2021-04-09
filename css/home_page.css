@@ -1,7 +1,12 @@
+body{
+    padding: 4em;
+    background-color: #DCE8F2;
+}
 #top-container{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 5em;
 }
 .blue-container{
     width: 75%;
@@ -21,32 +26,107 @@
     justify-content: center;
     flex-direction: column;
 }
+
+.home-page-nav:hover{
+    animation: jumping 0.75s infinite;
+}
+
+@keyframes jumping {
+    50%{
+        transform: translateY(-1em);
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+}
 .circles{
-    width: 66%;
-    height: 66%;
+    width:15rem;
+    height: 15rem;
     border-radius: 50%;
     background-color: #93DEF3;
+    margin-bottom: 3em;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .blue-container-img{
-    width: 20em;
+    width: 110%;
     height: auto;
 }
 .top-labels{
     display:inline-block;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+    letter-spacing: 0.165em;
+    font-size: 16px;
 }
 
 #education{
-    margin: 10em;
-
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.button-group{
+    height: 6.18em;
+    margin-bottom: 5em;
+
+    align-self: center;
+}
+
+.btn{
+    background-color: #B0CFEB;
+    color: black;
+    width: 18em;
+    border-radius: 1.25em;
+
+    font-size: 14px;
+}
+
+#video-title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
 }
 
 #video{
     width: 90%;
+    height: 30.5em;
     border: 1em;
+}
+
+
+@media (max-width: 576px) {
+    body{
+        padding: 0;
+    }
+    .blue-container{
+        flex-direction: column;
+    }
+
+    .home-page-nav{
+        flex-direction: column;
+    }
+
+    .circles{
+        width: 10em;
+        height: 10em;
+    }
+
+    .blue-container-img{
+        width: 5em;
+        height: 5em;
+    }
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: white;
+    text-decoration: none;
 }

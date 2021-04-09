@@ -5,29 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/home_page.css">
+
     <title>BAGYO!</title>
 </head>
 
 <body>
     <div id="top-container">
-        <section class="blue-container">
-            <div class="circles">
-                <img src="media/027-drawkit-notebook-man-colour.svg" alt="Picture of man holding a pen."
-                    class="blue-container-img">
-            </div>
-            <p class="top-labels">BEFORE</p>
-            <div class="circles">
-                <img src="media/053-holding-phone-colour.svg" alt="Picture of a h   and holding phone."
-                    class="blue-container-img">
-            </div>
-            <p class="top-labels">DURING</p>
-            <div class="circles">
-                <img src="media/099-map-colour.svg" alt="Picture of a map" class="blue-container-img">
-            </div>
-            <p class="top-labels">AFTER</p>
+        <section class="container blue-container">
+            <section class="home-page-nav">
+                <div class="circles">
+                    <img src="media/notebook-man.png" alt="Picture of man holding a pen." class="blue-container-img">
+                </div>
+                <h1 class="top-labels">BAGO ANG BAGYO</h1>
+            </section>
+            <section class="home-page-nav">
+                <div class="circles">
+                    <img src="media/phone-hold.png" alt="Picture of a h   and holding phone."
+                        class="blue-container-img">
+                </div>
+                <h1 class="top-labels">PAGDATING NG BAGYO</h1>
+            </section>
+            <section class="home-page-nav">
+                <div class="circles">
+                    <img src="media/map.png" alt="Picture of a map" class="blue-container-img">
+                </div>
+                <h1 class="top-labels text-center">PAGKATAPOS NG BAGYO</h1>
+            </section>
         </section>
     </div>
+
+
+    <section id="education">
+        <div class="btn-group button-group">
+            <button class="btn btn-primary"><a href=#video>TYPHOON PREPAREDNESS VIDEO</a></button>
+            <button class="btn btn-primary">HOW'S THE WEATHER TODAY?</button>
+            <button class="btn btn-primary">YOUR BAGYO! CHECKLIST</button>
+        </div>
+        <section class="col-8">
+            <h2 id="video-title">TYPHOONS: WHAT TO DO BEFORE, DURING, AND AFTER</h2>
+            <video src="media/pagasa-video.mp4" id="video" poster="media/009-app-user-colour.svg" controls></video>
+            <blockquote class="blockquote-footer">Video by: Department of Education</blockquote>
+        </section>
+        <section class="col-4">
+
+        </section>
+    </section>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
