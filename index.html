@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
 
+    <link href="forecast/forecast.js">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/home_page.css">
@@ -22,44 +24,80 @@
 <body>
     <div id="top-container">
         <section class="container blue-container">
-            <section class="home-page-nav">
-                <div class="circles">
-                    <img src="media/notebook-man.png" alt="Picture of man holding a pen." class="blue-container-img">
-                </div>
-                <h1 class="top-labels">BAGO ANG BAGYO</h1>
-            </section>
-            <section class="home-page-nav">
-                <div class="circles">
-                    <img src="media/phone-hold.png" alt="Picture of a h   and holding phone."
-                        class="blue-container-img">
-                </div>
-                <h1 class="top-labels">PAGDATING NG BAGYO</h1>
-            </section>
-            <section class="home-page-nav">
-                <div class="circles">
-                    <img src="media/map.png" alt="Picture of a map" class="blue-container-img">
-                </div>
-                <h1 class="top-labels text-center">PAGKATAPOS NG BAGYO</h1>
-            </section>
+            <a href="#before-storm-nav">
+                <section class="home-page-nav">
+                    <div class="circles">
+                        <img src="media/notebook-man.png" alt="Picture of man holding a pen."
+                            class="blue-container-img">
+                    </div>
+                    <h1 class="top-labels text-center">BAGO ANG BAGYO</h1>
+                </section>
+            </a>
+
+            <a>
+                <section class="home-page-nav">
+                    <div class="circles">
+                        <img src="media/phone-hold.png" alt="Picture of a h   and holding phone."
+                            class="blue-container-img">
+                    </div>
+                    <h1 class="top-labels text-center">PAGDATING NG BAGYO</h1>
+                </section>
+            </a>
+
+            <a>
+                <section class="home-page-nav">
+                    <div class="circles">
+                        <img src="media/map.png" alt="Picture of a map" class="blue-container-img">
+                    </div>
+                    <h1 class="top-labels text-center">PAGKATAPOS NG BAGYO</h1>
+                </section>
+            </a>
         </section>
     </div>
-
-
-    <section id="education">
+    <section id="before-storm-nav">
         <div class="btn-group button-group">
-            <button class="btn btn-primary"><a href=#video>TYPHOON PREPAREDNESS VIDEO</a></button>
-            <button class="btn btn-primary">HOW'S THE WEATHER TODAY?</button>
-            <button class="btn btn-primary">YOUR BAGYO! CHECKLIST</button>
+            <button class="btn btn-primary"><a href=#video>TYPHOON PREPAREDNESS
+                    VIDEO</a></button>
+            <button class="btn btn-primary"><a href="#weather-side" class="going-weather">HOW'S THE
+                    WEATHER TODAY?</a></button>
+            <button class="btn btn-primary"><a>YOUR BAGYO! CHECKLIST</a></button>
         </div>
+    </section>
+    <div class="before-storm container">
+
         <section class="col-8">
             <h2 id="video-title">TYPHOONS: WHAT TO DO BEFORE, DURING, AND AFTER</h2>
             <video src="media/pagasa-video.mp4" id="video" poster="media/009-app-user-colour.svg" controls></video>
             <blockquote class="blockquote-footer">Video by: Department of Education</blockquote>
         </section>
-        <section class="col-4">
 
+        <section class="col-4" id="weather-side">
+            <div class="container my-5 mx-auto">
+                <h1 class="text-muted text-center my-4">Today</h1>
+
+                <form class="change-location my-4 text-center text-muted">
+                    <label for="city">Enter a location for weather information</label>
+                    <input type="text" name="city" class="form-control p-4">
+                </form>
+
+                <div class="card shadow-lg rounded d-none">
+                    <img class="card-img-top" class="time" src="./img/day.svg" style="width: 18rem;">
+                    <div class="icon bg-light mx-auto text-center">
+                        <img src="" alt="">
+                    </div>
+                </div>
+
+                <div class="text-muted text-uppercase text-center details">
+                    <h5 class="my-3">City name</h5>
+                    <div class="my-3">Weather condition</div>
+                    <div class="display-4 my-4">
+                        <span>temp</span>
+                        <span>&deg;C</span>
+                    </div>
+                </div>
+            </div>
         </section>
-    </section>
+    </div>
 
 
 
@@ -73,6 +111,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <script src="forecast/forecast.js"></script>
 
 </body>
 
