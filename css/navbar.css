@@ -4,16 +4,13 @@
 
 .nav-wrapper {
 	width: 100%;
-	position: absolute;
 	top: 0%;
 	z-index: 1;
 }
 
 header {
 	z-index: 0;
-	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-bottom: 1px solid black;
 }
