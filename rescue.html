@@ -8,14 +8,16 @@
 			integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="styles/navbar.css" />
+		<link rel="stylesheet" href="styles/style_rescue.css" />
+		<link rel="stylesheet" href="styles/information-cards.css" />
 	</head>
 	<body>
-		<div class="nav-wrapper">
+		<header class="nav-wrapper">
 			<nav class="navbar navbar-expand-md navbar-light">
 				<div class="container-fluid align-items-start mx-3">
 					<a class="navbar-brand" href="#">
-						<img src="bagyo_logo.png" class="logo" alt="" />
+						<img src="media/bagyo_logo.png" class="logo" alt="" />
 					</a>
 					<button
 						class="navbar-toggler"
@@ -87,18 +89,31 @@
 								</p>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">for rescuers</a>
+								<a class="nav-link" href="#">
+									<label
+										class="form-check-label"
+										for="flexCheckDefault"
+									>
+										for rescuers
+									</label>
+									<input
+										class="form-check-input"
+										type="checkbox"
+										value=""
+										id="userType"
+									/>
+								</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</nav>
-		</div>
+		</header>
 
-		<header>
+		<section id="top-header">
 			<div class="hero">
 				<h1>check help.</h1>
-				<img src="054-holding-phone-monochrome.png" alt="" />
+				<img src="media/054-holding-phone-monochrome.png" alt="" />
 			</div>
 			<div>
 				<svg
@@ -116,17 +131,20 @@
 					/>
 				</svg>
 			</div>
-		</header>
+		</section>
 
-		<section>
+		<section id="map-info">
 			<div id="map" class="shad-and-rad"></div>
 			<button id="addMarker" class="btn btn-outline-secondary">
 				Share location
 			</button>
-			<div class="evacations-cont">
+			<div class="info-container">
+				<!-- filled by js -->
+			</div>
+			<div class="info-container">
 				<h2>Evacuation Area Information</h2>
 				<hr />
-				<div class="evacs-cards"></div>
+				<div class="info-cards" id="evacs"></div>
 			</div>
 			<!-- <button id="addMarker" class="btn">Add Marker</button> -->
 		</section>
@@ -136,7 +154,10 @@
 			integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
 			crossorigin="anonymous"
 		></script>
-		<script src="app.js"></script>
+		<script src="map.js"></script>
+		<script src="demoData.js"></script>
+		<script src="point-to-line-2d.js"></script>
+		<script src="implementation.js"></script>
 		<script
 			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsqVNQlUvCNTJ3R-92My0BdCs4cZYyXvI&callback=initMap&libraries=&v=weekly"
 			async
