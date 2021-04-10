@@ -1,5 +1,6 @@
 let map;
 let isRescuer = false;
+let isEvacsLoaded = false;
 function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
 		center: { lat: 14.64907, lng: 121.104973 },
@@ -30,7 +31,7 @@ function setMarkerEvac(location) {
 	const marker = new google.maps.Marker({
 		position: location,
 		map: map,
-		icon: 'media/markers/evac.png',
+		icon: '/media/markers/evac.png',
 	});
 	marker.setMap(map);
 }
@@ -39,7 +40,7 @@ function setMarkerCritical(location) {
 	const marker = new google.maps.Marker({
 		position: location,
 		map: map,
-		icon: 'media/markers/critical.png',
+		icon: '/media/markers/critical.png',
 	});
 	marker.setMap(map);
 }
@@ -48,7 +49,7 @@ function setMarkerHigh(location) {
 	const marker = new google.maps.Marker({
 		position: location,
 		map: map,
-		icon: 'media/markers/high.png',
+		icon: '/media/markers/high.png',
 	});
 	marker.setMap(map);
 }
@@ -57,7 +58,7 @@ function setMarkerMedium(location) {
 	const marker = new google.maps.Marker({
 		position: location,
 		map: map,
-		icon: 'media/markers/medium.png',
+		icon: '/media/markers/medium.png',
 	});
 	marker.setMap(map);
 }
@@ -66,7 +67,7 @@ function setMarkerLow(location) {
 	const marker = new google.maps.Marker({
 		position: location,
 		map: map,
-		icon: 'media/markers/low.png',
+		icon: '/media/markers/low.png',
 	});
 	marker.setMap(map);
 }

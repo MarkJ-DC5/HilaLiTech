@@ -48,12 +48,14 @@ function rescuerMode() {
 			severity
 		);
 	});
-	for (let index = 0; index < 5; index++) {
+
+	if (isEvacsLoaded) {
 		for (evac in evacs) {
 			setMarkerEvac(evacs[evac].loc);
 			createEvacCard(evacs[evac].name, evacs[evac].cap, evacs[evac].loc);
 		}
 	}
+
 	document.querySelector('#addMarker').classList.add('hidden');
 }
 
