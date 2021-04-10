@@ -187,3 +187,9 @@ a:hover{
     color: white;
     text-decoration: none;
 }
+
+label{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+}
