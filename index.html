@@ -21,6 +21,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/home_page.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <title>BAGYO!</title>
 </head>
@@ -133,7 +134,7 @@
             <button class="btn btn-primary"><a href="#checklist-container">YOUR BAGYO! CHECKLIST</a></button>
         </div>
     </section>
-    <div class="before-storm container">
+    <div class="before-storm container-fluid">
 
         <!-- video -->
         <section class="col-8">
@@ -142,51 +143,114 @@
                 <video src="media/pagasa-video.mp4" id="video" poster="media/009-app-user-colour.svg" controls></video>
                 <blockquote class="blockquote-footer">Video by: Department of Education</blockquote>
             </div>
-            <div id="checklist-container">
-                <h2 class="section-title">Kumpletuhin ang iyong "<em>GO BAG</em> "!</h2>
 
-                <input type="checkbox" name="pagkain" id="">
-                <label for="pagkain">Pagkain (de lata, biskwit, atbp.)</label><br>
-                <input type="checkbox" name="tubig" id="">
-                <label for="tubig">Maiinom na tubig</label><br>
-                <input type="checkbox" name="flashlight" id="">
-                <label for="flashlight"><em>Flashlight</em></label><br>
-                <input type="checkbox" name="can-opener" id="">
-                <label for="can-opener">Pambukas ng lata (<em>can opener</em>)</label><br>
-                <input type="checkbox" name="money" id="">
-                <label for="money">Sapat na pera</label><br>
-            </div>
         </section>
 
         <!-- accuweather report -->
-        <section class="col-4" id="weather-side">
-            <div class="container my-5 mx-auto">
-                <h1 class=" text-center my-4 weather-content">TODAY</h1>
+        <section class="col-lg-4" id="weather-side">
+            <div>
+                <div class="container my-5 mx-auto affix">
+                    <h1 class=" text-center my-4 weather-content">TODAY</h1>
 
-                <form class="change-location my-4 text-center ">
-                    <label for="city" class="weather-content">Enter a location for weather information</label>
-                    <input type="text" name="city" class="form-control p-4">
-                </form>
+                    <form class="change-location my-4 text-center ">
+                        <label for="city" class="weather-content">Enter a location for weather information</label>
+                        <input type="text" name="city" class="form-control p-4" style="height: 2em;">
+                    </form>
 
-                <div class="card shadow-lg rounded d-none">
-                    <img class="card-img-top" class="time" src="./img/day.svg" style="width: 18rem;">
-                    <div class="icon bg-light mx-auto text-center">
-                        <img src="" alt="">
+                    <div class="card shadow-lg rounded d-none">
+                        <img class="card-img-top" class="time" src="./img/day.svg" style="width: 18rem;">
+                        <div class="icon bg-light mx-auto text-center">
+                            <img src="" alt="">
+                        </div>
                     </div>
-                </div>
 
-                <div class=" text-uppercase text-center details">
-                    <h5 class="my-3 weather-content">City name</h5>
-                    <div class="my-3 weather-content">Weather condition</div>
-                    <div class="display-4 my-4">
-                        <span class="weather-content">temp</span>
-                        <span class="weather-content">&deg;C</span>
+                    <div class=" text-uppercase text-center details">
+                        <h5 class="my-3 weather-content">City name</h5>
+                        <div class="my-3 weather-content">Weather condition</div>
+                        <div class="display-4 my-4">
+                            <span class="weather-content">temp</span>
+                            <span class="weather-content">&deg;C</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
 
+    <div class="checklist-outer-container">
+        <div class="checklist-outer-container-2">
+            <div id="checklist-container">
+                <div class="first-row">
+                    <h2 class="section-title">Kumpletuhin ang iyong "<em>GO BAG</em> "!</h2>
+                    <input type="checkbox" name="pagkain" id="">
+                    <label for="pagkain">Pagkain (de lata, biskwit, atbp.)</label><br>
+                    <input type="checkbox" name="tubig" id="">
+                    <label for="tubig">Maiinom na tubig</label><br>
+                    <input type="checkbox" name="flashlight" id="">
+                    <label for="flashlight"><em>Flashlight</em></label><br>
+                    <input type="checkbox" name="can-opener" id="">
+                    <label for="can-opener">Pambukas ng lata (<em>can opener</em>)</label><br>
+                    <input type="checkbox" name="money" id="">
+                    <label for="money">Sapat na pera</label><br>
+                    <input type="checkbox" name="radio" id="">
+                    <label for="radio">Maliit na radyo</label><br>
+                    <input type="checkbox" name="rope" id="">
+                    <label for="rope">Makapal na lubid</label><br>
+                    <input type="checkbox" name="clothes" id="">
+                    <label for="clothes">Damit (<em>jacket</em>, damit na panloob, <em>t-shirt</em>, atbp.)</label><br>
+                    <input type="checkbox" name="Kumot" id="">
+                    <label for="Kumot">Kumot</label><br>
+                    <input type="checkbox" name="Pito" id="">
+                    <label for="Pito">Pito</label><br>
+                    <input type="checkbox" name="Multitool" id="">
+                    <label for="Multitool"><em>Multitool</em>(naglalaman ng kutsilyo, <em>screwdriver</em>,
+                        atbp.)</label><br>
+                </div>
+
+                <div class="second-row">
+                    <input type="checkbox" name="Sipilyo" id="">
+                    <label for="Sipilyo">Sipilyo</label><br>
+                    <input type="checkbox" name="Sabon" id="">
+                    <label for="Sabon">Sabon</label><br>
+                    <input type="checkbox" name="Alcohol" id="">
+                    <label for="Alcohol"><em>Alcohol</em></label><br>
+                    <input type="checkbox" name="Sanitary-napkin" id="">
+                    <label for="Sanitary-napkin"><em>Sanitary napkin </em></label><br>
+
+                    <h3><em>First Aid Kit</em></h3>
+                    <input type="checkbox" name="paracetamol" id="">
+                    <label for="paracetamol">Paracetamol</label><br>
+                    <input type="checkbox" name="Advil" id="">
+                    <label for="Advil">Advil</label><br>
+                    <input type="checkbox" name="Bandages" id="">
+                    <label for="Bandages">Bandages</label><br>
+                    <input type="checkbox" name="Antibiotic" id="">
+                    <label for="Antibiotic">Antibiotic ointment</label><br>
+                    <input type="checkbox" name="Cold-pack" id="">
+                    <label for="Cold-pack">Cold pack</label><br>
+                    <input type="checkbox" name="Gauze-packs" id="">
+                    <label for="Gauze-packs">Gauze packs</label><br>
+                </div>
+            </div>
+            <button class="btn btn-outline-success">MAGHANAP NG MABIBILHAN</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="icons_container">
+            <a href=""><img src="Media/facebook.svg" alt="Contact us on Facebook" class="icon"></a>
+            <a href=""><img src="Media/twitter.svg" alt="Contact us on Twitter" class="icon"></a>
+            <a><img src="Media/instagram.svg" alt="Contact us on Instagram" class="icon"></a>
+            <a><img src="Media/discord.svg" alt="Join our Discord community" class="icon"></a>
+            <a><img src="Media/github.svg" alt="Check out our GitHub" class="icon"></a>
+            <a><img src="Media/gmail.svg" alt="Send us an Email" class="icon"></a>
+            <a><img src="Media/message.svg" alt="Send us a message" class="icon"></a>
+        </div>
+        <div class="about">
+            <a>ABOUT HILALI TECH</a>
+            <a>ABOUT PROJECT BAGYO </a>
+        </div>
+    </footer>
 
 
 

@@ -96,6 +96,11 @@ body{
     font-weight: 900;
     font-size: 24px;
 }
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
 
 .video-container{
     margin-bottom: 5em;
@@ -107,22 +112,47 @@ body{
     border: 1em;
 }
 
-#checklist-container{
-    background-color: #0C7FE9;
-    color: white;
-    border-radius: 30px;
-    padding: 3em;
+.checklist-outer-container{
+    display: flex;
+    justify-content: center ;
 }
 
+.checklist-outer-container-2{
+    width: 90%;
+    background-color:#B0CFEB;
+    color: black;
+    border-radius: 30px;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#checklist-container{
+    width: 90%;
+    background-color:#B0CFEB;
+    color: black;
+    border-radius: 30px;
+    padding: 3em;
+    display: flex;
+    justify-content: space-between  ;
+}
+
+.second-row{
+    align-self: flex-end;
+    width: 40%;
+}
 .before-storm{
     display: flex;
 }
 #weather-side{
-    height: 30em;
-    position:sticky;
+    height: 32.5em;
+    position: sticky;
     background-color: #0C7FE9;
 
     border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .weather-content{
