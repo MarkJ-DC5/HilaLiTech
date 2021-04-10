@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home_page.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <title>BAGYO!</title>
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <div class="nav-wrapper">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid align-items-start mx-3">
+                <a class="navbar-brand" href="#">
+                    <img src="media/bagyo_logo.png" class="logo" alt="Bagyo!'s logo." />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end mt-3" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link disabled d-none d-md-block">
+                                |
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">INFO</a>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link disabled d-none d-md-block">
+                                |
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nav/rescue.html">UPDATE</a>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link disabled d-none d-md-block">
+                                |
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nav/rescue.html">RESCUE</a>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link disabled d-none d-md-block">
+                                |
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">HELP LINE</a>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link disabled d-none d-md-block">
+                                |
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">STORM MAP</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <header></header>
+
+    <!-- blue container -->
+    <div id="top-container">
+        <section class="container blue-container">
+            <a href="#before-storm-nav">
+                <section class="home-page-nav">
+                    <div class="circles">
+                        <img src="media/notebook-man.png" alt="Picture of man holding a pen."
+                            class="blue-container-img">
+                    </div>
+                    <h1 class="top-labels text-center">BAGO ANG BAGYO</h1>
+                </section>
+            </a>
+
+            <a>
+                <section class="home-page-nav">
+                    <div class="circles">
+                        <img src="media/phone-hold.png" alt="Picture of a h   and holding phone."
+                            class="blue-container-img">
+                    </div>
+                    <h1 class="top-labels text-center">PAGDATING NG BAGYO</h1>
+                </section>
+            </a>
+
+            <a>
+                <section class="home-page-nav">
+                    <div class="circles">
+                        <img src="media/map.png" alt="Picture of a map" class="blue-container-img">
+                    </div>
+                    <h1 class="top-labels text-center">PAGKATAPOS NG BAGYO</h1>
+                </section>
+            </a>
+        </section>
+    </div>
+
+    <!-- navigation for educational section -->
+    <section id="before-storm-nav">
+        <div class="btn-group button-group">
+            <button class="btn btn-primary"><a href=#video>TYPHOON PREPAREDNESS
+                    VIDEO</a></button>
+            <button class="btn btn-primary"><a href="#weather-side" class="going-weather">HOW'S THE
+                    WEATHER TODAY?</a></button>
+            <button class="btn btn-primary"><a href="#checklist-container">YOUR BAGYO! CHECKLIST</a></button>
+        </div>
+    </section>
+    <div class="before-storm container">
+
+        <!-- video -->
+        <section class="col-8">
+            <div class="video-container">
+                <h2 class="section-title">TYPHOONS: WHAT TO DO BEFORE, DURING, AND AFTER</h2>
+                <video src="media/pagasa-video.mp4" id="video" poster="media/009-app-user-colour.svg" controls></video>
+                <blockquote class="blockquote-footer">Video by: Department of Education</blockquote>
+            </div>
+            <div id="checklist-container">
+                <h2 class="section-title">Kumpletuhin ang iyong "<em>GO BAG</em> "!</h2>
+
+                <input type="checkbox" name="pagkain" id="">
+                <label for="pagkain">Pagkain (de lata, biskwit, atbp.)</label><br>
+                <input type="checkbox" name="tubig" id="">
+                <label for="tubig">Maiinom na tubig</label><br>
+                <input type="checkbox" name="flashlight" id="">
+                <label for="flashlight"><em>Flashlight</em></label><br>
+                <input type="checkbox" name="can-opener" id="">
+                <label for="can-opener">Pambukas ng lata (<em>can opener</em>)</label><br>
+                <input type="checkbox" name="money" id="">
+                <label for="money">Sapat na pera</label><br>
+            </div>
+        </section>
+
+        <!-- accuweather report -->
+        <section class="col-4" id="weather-side">
+            <div class="container my-5 mx-auto">
+                <h1 class=" text-center my-4 weather-content">TODAY</h1>
+
+                <form class="change-location my-4 text-center ">
+                    <label for="city" class="weather-content">Enter a location for weather information</label>
+                    <input type="text" name="city" class="form-control p-4">
+                </form>
+
+                <div class="card shadow-lg rounded d-none">
+                    <img class="card-img-top" class="time" src="./img/day.svg" style="width: 18rem;">
+                    <div class="icon bg-light mx-auto text-center">
+                        <img src="" alt="">
+                    </div>
+                </div>
+
+                <div class=" text-uppercase text-center details">
+                    <h5 class="my-3 weather-content">City name</h5>
+                    <div class="my-3 weather-content">Weather condition</div>
+                    <div class="display-4 my-4">
+                        <span class="weather-content">temp</span>
+                        <span class="weather-content">&deg;C</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="forecast/forecast.js"></script>
+
+</body>
+
+</html>
