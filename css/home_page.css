@@ -82,9 +82,6 @@ body{
 
     align-self: center;
 }
-
-
-
 .btn{
     background-color: #B0CFEB;
     color: black;
@@ -92,12 +89,24 @@ body{
     border-radius: 1.25em;
 
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#video-title{
+.section-title{
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 24px;
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.video-container{
+    margin-bottom: 5em;
 }
 
 #video{
@@ -105,11 +114,52 @@ body{
     height: 30.5em;
     border: 1em;
 }
+
+.checklist-outer-container{
+    display: flex;
+    justify-content: center ;
+}
+
+.checklist-outer-container-2{
+    width: 90%;
+    background-color:#B0CFEB;
+    color: black;
+    border-radius: 30px;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#checklist-container{
+    width: 90%;
+    background-color:#B0CFEB;
+    color: black;
+    border-radius: 30px;
+    padding: 3em;
+    display: flex;
+    justify-content: space-between  ;
+}
+
+.second-row{
+    align-self: flex-end;
+    width: 40%;
+}
 .before-storm{
     display: flex;
 }
 #weather-side{
-    position:sticky;
+    height: 32.5em;
+    position: sticky;
+    background-color: #0C7FE9;
+
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-content{
+    color: white;
 }
 @media (max-width: 576px) {
     *{
@@ -158,7 +208,7 @@ body{
     .top-labels{
         margin: 0;
         padding:0;
-        
+
     }
 }
 
@@ -169,4 +219,10 @@ a{
 a:hover{
     color: white;
     text-decoration: none;
+}
+
+label{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 14px;
 }
