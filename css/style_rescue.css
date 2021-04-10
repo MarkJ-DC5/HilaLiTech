@@ -9,7 +9,7 @@ body {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -23,7 +23,7 @@ body {
 	font-family: 'Poppins', sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 96px;
+	font-size: 72px;
 	line-height: 144px;
 	letter-spacing: 0.165em;
 	display: inline-block;
