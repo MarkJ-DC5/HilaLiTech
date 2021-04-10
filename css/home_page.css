@@ -3,9 +3,9 @@ html{
 }
 
 body{
-    
     background-color:white;
 }
+
 #top-container{
     width: 100%;
     display: flex;
@@ -14,7 +14,7 @@ body{
 }
 .blue-container{
     width: 75%;
-    height:451px;
+    height:28.20em;
     border-radius: 53px;
     background-color: #0C7FE9;
 
@@ -112,25 +112,53 @@ body{
     position:sticky;
 }
 @media (max-width: 576px) {
-    body{
+    *{
+        margin:0;
         padding: 0;
     }
-    .blue-container{
+    body{
+        padding: 0;
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .blue-container{
+
+        flex-direction: column;
+        height: 100%;
+        width: 100%;    
+
+        border-radius: 0%;
+
     }
 
     .home-page-nav{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-page-nav:hover{
+        animation: none;
     }
 
     .circles{
-        width: 10em;
-        height: 10em;
+        transform: scale(0.5);
+
+        margin: 0;
+        padding: 0;
     }
 
     .blue-container-img{
         width: 5em;
         height: 5em;
+    }
+
+    .top-labels{
+        margin: 0;
+        padding:0;
+        
     }
 }
 
