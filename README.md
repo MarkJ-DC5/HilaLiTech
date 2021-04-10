@@ -16,6 +16,7 @@ Method 2 (Cloning the repository):
 
 Method 3 (GitHub pages):
   1. Visit https://blue-hacks-2021.github.io/HilaLiTech/ and view the site there
+  2. Note: Currently, Accuweather component from the homepage is only functiong when deployed through Methods 1 and 2.
 
 Contributors:
 1. Thea Denisse Foronda
