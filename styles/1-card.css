@@ -1,0 +1,63 @@
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#info-cyclones .card {
+	box-sizing: border-box;
+	padding: 0;
+	height: 25rem;
+	width: 20em;
+	border-radius: 16px;
+	overflow: hidden;
+	box-shadow: 15px 15px 27px rgba(209, 209, 209, 0.89);
+	margin-bottom: 3rem;
+	border: none;
+}
+
+.image-head {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	height: 9rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 0;
+}
+
+.content {
+	text-align: center;
+}
+
+.content h5 {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	font-size: 20px;
+	font-style: bold;
+	text-align: center;
+	letter-spacing: 0.1em;
+}
+
+.content p {
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: 0.1em;
+}
+
+.card .ih1 {
+	background-image: url(/media/1-information/rain-1.jpg);
+}
+.card .ih2 {
+	background-image: url(/media/1-information/rain-2.jpg);
+}
+.card .ih3 {
+	background-image: url(/media/1-information/rain-3.jpeg);
+}
+.card .ih4 {
+	background-image: url(/media/1-information/rain-4.jpeg);
+}
+.card .ih5 {
+	background-image: url(/media/1-information/rain-5.jpg);
+}
